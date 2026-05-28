@@ -1,0 +1,9 @@
+order_id,customer_id,product,amount,status,date
+1001,C001,Laptop,15000000,completed,2024-01-15
+1002,C002,Phone,8000000,completed,2024-01-15
+1003,C003,Tablet,12000000,pending,2024-01-16
+1004,C001,Headphones,2000000,cancelled,2024-01-16
+1005,C004,Laptop,15000000,completed,2024-01-17
+1006,C005,Phone,8000000,pending,2024-01-17
+1007,C002,Monitor,5000000,completed,2024-01-18
+1008,C006,Laptop,15000000,completed,2024-01-18
