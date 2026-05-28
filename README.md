@@ -9,7 +9,8 @@ Khóa học Data Engineering thực chiến, đi từ nền tảng kỹ thuật 
 | [Buổi 1](lessons/buoi-01-linux-shell.md) | Linux, Shell & Dev Environment | CLI Web Crawler bằng Bash | [`buoi-01-linux/`](buoi-01-linux/) |
 | [Buổi 2](lessons/buoi-02-python-etl.md) | Python cho Data Engineering | ETL Pipeline (Extract → Transform → Load) | [`buoi-02-python/`](buoi-02-python/) |
 | [Buổi 3](lessons/buoi-03-database-sql.md) | Database & SQL | Schema e-commerce + queries nâng cao + SQLAlchemy | [`buoi-03-sql/`](buoi-03-sql/) |
-| Buổi 4 | Web API & FastAPI | _(sắp ra mắt)_ | — |
+| [Buổi 4](lessons/buoi-04-fastapi.md) | Web API & FastAPI | REST API + JWT + Locust load test | [`buoi-04-fastapi/`](buoi-04-fastapi/) |
+| Buổi 5 | Testing & Docker | _(sắp ra mắt)_ | — |
 
 ## Cấu trúc repo
 
@@ -18,7 +19,8 @@ de-zero-to-hero/
 ├── lessons/                # Giáo trình từng buổi (Markdown, tiếng Việt)
 ├── buoi-01-linux/          # Lab Bash: web crawler, data quality, Makefile
 ├── buoi-02-python/         # Lab Python: ETL package + CLI (uv project)
-└── buoi-03-sql/            # Lab SQL: DDL/DML, queries, SQLAlchemy
+├── buoi-03-sql/            # Lab SQL: DDL/DML, queries, SQLAlchemy
+└── buoi-04-fastapi/        # Lab API: FastAPI + JWT + Locust
 ```
 
 ## Cách dùng

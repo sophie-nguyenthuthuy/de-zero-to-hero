@@ -118,4 +118,4 @@ python query_db.py
 
 ---
 
-**Buổi tiếp theo:** Buổi 4 — Web API & FastAPI
+**Buổi tiếp theo:** [Buổi 4 — Web API & FastAPI](buoi-04-fastapi.md)
