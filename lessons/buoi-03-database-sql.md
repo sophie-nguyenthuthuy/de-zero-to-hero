@@ -93,7 +93,9 @@ psql -h localhost -U deuser -d de_lab -W -f sql/04_performance.sql
 
 [`../buoi-03-sql/sql/04_performance.sql`](../buoi-03-sql/sql/04_performance.sql): `\timing on`, `EXPLAIN (ANALYZE, BUFFERS)` trước/sau index, partial index `idx_orders_completed_date` (WHERE status='completed'), `ANALYZE` cập nhật statistics, kiểm tra `pg_stat_user_indexes`, gợi ý `pg_stat_statements`.
 
-> **Lưu ý:** `CREATE INDEX CONCURRENTLY` không chạy được trong transaction block. Khi chạy file qua `psql -f` ở chế độ autocommit thì OK; tránh bọc file trong `BEGIN/COMMIT` hoặc dùng `--single-transaction`.
+> **Lưu ý 1:** `CREATE INDEX CONCURRENTLY` không chạy được trong transaction block. Khi chạy file qua `psql -f` ở chế độ autocommit thì OK; tránh bọc file trong `BEGIN/COMMIT` hoặc dùng `--single-transaction`.
+>
+> **Lưu ý 2 (bug đã sửa):** view `pg_stat_user_indexes` không có cột `tablename`/`indexname` — đúng tên là `relname` (bảng) và `indexrelname` (index). Bản gốc dùng `tablename`/`indexname` sẽ lỗi `column does not exist`; file `.sql` đã sửa sang `relname`/`indexrelname` (alias lại cho dễ đọc).
 
 ---
 
